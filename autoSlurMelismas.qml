@@ -44,7 +44,7 @@ MuseScore {
                   cursor.rewind(0) // Rewind cursor at the beginning of current staff
                   
                   while (cursor.segment && cursor.tick < endTick){
-                        if (cursor.element.lyrics.length > 0){ // if there's lyrics then:                         
+                        if (cursor.element.lyrics.length > 0){ // if there's a syllable then:                         
                               var melStart = cursor.tick                        
                               var melLength = 0
                               cursor.next()
